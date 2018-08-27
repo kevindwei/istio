@@ -252,8 +252,8 @@ gateways:
     autoscaleMin: 1
     autoscaleMax: 5
     serviceAnnotations: {}
-    #type: ClusterIP #change to NodePort or LoadBalancer if need be
-    type: NodePort #change to NodePort, ClusterIP or LoadBalancer if need be
+    type: ClusterIP #change to NodePort or LoadBalancer if need be
+    #type: NodePort #change to NodePort, ClusterIP or LoadBalancer if need be
 
     ports:
     - port: 80
