@@ -204,7 +204,8 @@ gateways:
 
     loadBalancerIP: ""
     serviceAnnotations: {}
-    type: LoadBalancer #change to NodePort, ClusterIP or LoadBalancer if need be
+    #type: LoadBalancer #change to NodePort, ClusterIP or LoadBalancer if need be
+    type: NodePort #change to NodePort, ClusterIP or LoadBalancer if need be
 
     ports:
       ## You can add custom gateway ports
