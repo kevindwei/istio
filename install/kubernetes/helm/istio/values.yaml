@@ -3,7 +3,7 @@ global:
   # Default hub for Istio images.
   # Releases are published to docker hub under 'istio' project.
   # Daily builds from prow are on gcr.io, and nightly builds from circle on docker.io/istionightly
-  hub: gcr.io/istio-release
+  hub: registry.cn-shenzhen.aliyuncs.com/kube8
 
   # Default tag for Istio images.
   tag: release-1.0-latest-daily
@@ -315,7 +315,7 @@ gateways:
 sidecarInjectorWebhook:
   enabled: true
   replicaCount: 1
-  image: sidecar_injector
+  image: sidecar_injector1.0
   enableNamespacesByDefault: false
 
 #
