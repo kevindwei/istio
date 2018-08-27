@@ -324,7 +324,7 @@ sidecarInjectorWebhook:
 galley:
   enabled: true
   replicaCount: 1
-  image: galley
+  image: galley1.0
 
 #
 # mixer configuration
@@ -334,7 +334,7 @@ mixer:
   replicaCount: 1
   autoscaleMin: 1
   autoscaleMax: 5
-  image: mixer
+  image: mixer1.0
 
   istio-policy:
     autoscaleEnabled: true
@@ -362,7 +362,7 @@ pilot:
   replicaCount: 1
   autoscaleMin: 1
   autoscaleMax: 1
-  image: pilot
+  image: pilot1.0
   sidecar: true
   traceSampling: 100.0
   # Resources for a small pilot install
@@ -376,7 +376,7 @@ pilot:
 #
 security:
   replicaCount: 1
-  image: citadel
+  image: citadel1.0
   selfSigned: true # indicate if self-signed CA is used.
 
 #
@@ -390,7 +390,7 @@ telemetry-gateway:
 grafana:
   enabled: false
   replicaCount: 1
-  image: grafana
+  image: grafana1.0
   security:
     enabled: false
     adminUser: admin
