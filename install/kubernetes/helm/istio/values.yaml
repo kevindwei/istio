@@ -166,7 +166,8 @@ ingress:
   service:
     annotations: {}
     loadBalancerIP: ""
-    type: LoadBalancer #change to NodePort, ClusterIP or LoadBalancer if need be
+    #type: LoadBalancer #change to NodePort, ClusterIP or LoadBalancer if need be
+    type: nodeport
     ports:
     - port: 80
       name: http
@@ -205,7 +206,7 @@ gateways:
     loadBalancerIP: ""
     serviceAnnotations: {}
     #type: LoadBalancer #change to NodePort, ClusterIP or LoadBalancer if need be
-    type: NodePort #change to NodePort, ClusterIP or LoadBalancer if need be
+    type: nodeport #change to NodePort, ClusterIP or LoadBalancer if need be
 
     ports:
       ## You can add custom gateway ports
@@ -252,8 +253,8 @@ gateways:
     autoscaleMin: 1
     autoscaleMax: 5
     serviceAnnotations: {}
-    type: ClusterIP #change to NodePort or LoadBalancer if need be
-    #type: NodePort #change to NodePort, ClusterIP or LoadBalancer if need be
+    #type: ClusterIP #change to NodePort or LoadBalancer if need be
+    type: nodeport #change to NodePort, ClusterIP or LoadBalancer if need be
 
     ports:
     - port: 80
