@@ -138,7 +138,7 @@ global:
 
   # Not recommended for user to configure this. Hyperkube image to use when creating custom resources
   hyperkube:
-    hub: quay.io/coreos
+    hub: registry.cn-shenzhen.aliyuncs.com/kube8/hyperkube
     tag: v1.7.6_coreos.0
 
   # Kubernetes >=v1.11.0 will create two PriorityClass, including system-cluster-critical and
